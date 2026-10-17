@@ -4,15 +4,22 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-blue-100">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="relative h-12 w-52 overflow-hidden rounded-md bg-white">
-          <Image
-            src="/assets/86aa350d-1a19-4905-894c-ef3cc6773e89.jpeg"
-            alt="Jellybiz Logistics logo"
-            fill
-            priority
-            sizes="208px"
-            style={{ objectFit: 'contain' }}
-          />
+        <div className="flex items-center gap-3">
+          <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-blue-100 bg-white shadow-sm">
+            <Image
+              src="/assets/86aa350d-1a19-4905-894c-ef3cc6773e89.jpeg"
+              alt="Jellybiz Logistics logo"
+              fill
+              priority
+              sizes="56px"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+
+          <div className="hidden sm:block">
+            <div className="font-black text-jellynav text-lg">Jellybiz</div>
+            <div className="text-[10px] uppercase tracking-[0.2em] text-gray-500">Logistics</div>
+          </div>
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
