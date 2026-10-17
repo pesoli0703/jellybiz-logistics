@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { site } from '../lib/site'
 
 export default function DeliveryForm(){
   const [name, setName] = useState('')
@@ -16,9 +17,8 @@ export default function DeliveryForm(){
       alert('Please complete the required fields: name, phone, pickup and delivery addresses.')
       return
     }
-    const base = 'https://wa.me/2347084243119'
     const message = `Delivery Enquiry from Website:\nName: ${name}\nPhone: ${phone}\nPickup: ${pickup}\nDelivery: ${delivery}\nType: ${type}\nDescription: ${desc}\nPreferred date: ${date}\nAdditional instructions: ${notes}`
-    const url = `${base}?text=${encodeURIComponent(message)}`
+    const url = `${site.whatsapp}?text=${encodeURIComponent(message)}`
     window.open(url, '_blank')
   }
 
@@ -33,7 +33,7 @@ export default function DeliveryForm(){
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700">Phone number *</label>
-          <input value={phone} onChange={e=>setPhone(e.target.value)} className="mt-1 block w-full rounded-md border-gray-200 p-2" placeholder="0708xxxxxxx" required />
+          <input value={phone} onChange={e=>setPhone(e.target.value)} className="mt-1 block w-full rounded-md border-gray-200 p-2" placeholder="0708 424 3119" required />
         </div>
         <div className="md:col-span-2">
           <label className="block text-sm font-medium text-gray-700">Pickup address *</label>
