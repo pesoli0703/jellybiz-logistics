@@ -1,4 +1,5 @@
 import React from 'react'
+import { waLink } from '../lib/site'
 
 const services = [
   {id: 'motorcycle', title: 'Motorcycle Dispatch', desc: 'Quick motorcycle deliveries for documents and small parcels within Lagos Island.'},
@@ -9,10 +10,10 @@ const services = [
   {id: 'business', title: 'Business Delivery Support', desc: 'Regular dispatch support for online sellers, shops and offices.'}
 ]
 
-function waLinkFor(serviceId:string, serviceTitle:string){
-  const base = 'https://wa.me/2347084243119'
-  const text = `Hello Jellybiz Logistics, I would like to request the ${serviceTitle} service. Please let me know availability and rates.`
-  return `${base}?text=${encodeURIComponent(text)}`
+function waLinkFor(serviceTitle: string) {
+  return waLink(
+    `Hello Jellybiz Logistics, I would like to request the ${serviceTitle} service. Please let me know availability and rates.`
+  )
 }
 
 export default function Services(){
@@ -25,7 +26,7 @@ export default function Services(){
             <h3 className="font-semibold text-lg text-jellynav">{s.title}</h3>
             <p className="mt-2 text-gray-600">{s.desc}</p>
             <div className="mt-4">
-              <a href={waLinkFor(s.id, s.title)} className="inline-flex items-center px-4 py-2 bg-jellyblue text-white rounded-md">Request This Service</a>
+              <a href={waLinkFor(s.title)} className="inline-flex items-center px-4 py-2 bg-jellyblue text-white rounded-md">Request This Service</a>
             </div>
           </div>
         ))}

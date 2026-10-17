@@ -1,10 +1,24 @@
 # Jellybiz Logistics — Website
 
-This repository is a starter implementation of the Jellybiz Logistics landing page, built with Next.js, TypeScript, and Tailwind CSS.
+Landing page for Jellybiz Logistics & Dispatch Services (Lagos Island), built with Next.js, TypeScript, and Tailwind CSS.
 
-Add your brand assets (logo and flyer) into public/assets and update image references in components/Hero.tsx and other places.
+## Brand assets
 
-Local setup
+The official flyer is the single source of brand imagery across the site:
+
+| File | Used for |
+| --- | --- |
+| `public/assets/flyer-banner.jpg` | Hero banner, contact section, flyer downloads |
+| `public/assets/og-image.jpg` | Social share preview (WhatsApp, Facebook, X, LinkedIn, Telegram) — 1200×630 |
+| `public/assets/logo.png` | Navbar, contact card, Instagram card, source for icons |
+| `public/icon-512.png`, `icon-192.png`, `icon-maskable-512.png` | Web app / install icons |
+| `public/apple-touch-icon.png`, `favicon.ico`, `favicon-32x32.png`, `favicon-16x16.png` | Browser and device icons |
+
+All copy, phone/WhatsApp links, address, social links and the production URL live in `lib/site.ts` — update that one file to change contact details everywhere.
+
+If the flyer artwork changes, replace `flyer-banner.jpg` at 1280×511 and regenerate `og-image.jpg` at 1200×630.
+
+## Local setup
 
 1. Install dependencies
 
@@ -18,20 +32,16 @@ Local setup
 
    npm run build
 
-Deployment
+## Deployment
 
-- I recommend Vercel for easy Next.js hosting. Connect this repository to Vercel and deploy.
+The site is deployed on Vercel at https://jellybiz-logistics-navy.vercel.app. Connect the repository to Vercel and deploy; `sitemap.xml`, `robots.txt` and the canonical/OG URLs already point to that domain. If a custom domain is added, update `site.url` in `lib/site.ts` plus `public/sitemap.xml` and `public/robots.txt`.
 
-SEO & analytics
+## SEO
 
-- Replace the placeholder url in public/sitemap.xml and robots.txt with your production domain.
-- Configure Google Search Console and optionally Google Analytics 4 (add gtag or GTM as needed).
+- Title, description, canonical, Open Graph and Twitter card tags are set in `pages/index.tsx`.
+- LocalBusiness (`MovingCompany`) structured data is embedded on the home page.
+- `public/sitemap.xml` and `public/robots.txt` are ready for Google Search Console.
 
-WhatsApp links
+## WhatsApp links
 
-All WhatsApp CTAs open the number +2347084243119 via wa.me with URL-encoded messages.
-
-Notes and next steps
-
-- Please upload the Jellybiz flyer and logo to public/assets. I will then update the hero and brand imagery.
-- If you want me to continue and finalize images, SEO, structured data, and a production-ready deploy, reply and I will finish the work.
+All WhatsApp CTAs open +234 708 424 3119 via `wa.me` with URL-encoded messages, generated through `waLink()` in `lib/site.ts`.

@@ -7,7 +7,7 @@ const faqs = [
   {q:'Does Jellybiz deliver larger packages?', a:'We offer mini van and small/medium load services for larger items where the size and route are suitable. Please confirm by contacting us.'},
   {q:'Can online vendors arrange recurring deliveries?', a:'Yes. Discuss business delivery arrangements via the business contact button to plan recurring pickups and rates.'},
   {q:'Which areas does Jellybiz cover?', a:'Jellybiz is based in Lagos Island. Please contact us to check availability for your specific pickup and delivery locations.'},
-  {q:'How can I contact Jellybiz?', a:'Phone/WhatsApp: 07084243119. Email: jelili_abubakar@yahoo.com. Instagram: @Jellybiz.logistics'},
+  {q:'How can I contact Jellybiz?', a:'Phone/WhatsApp: 0708 424 3119. Email: jelili_abubakar@yahoo.com. Instagram: @jellybiz.logistics'},
   {q:'How do I confirm whether a delivery request has been accepted?', a:'After opening WhatsApp and sending your enquiry, Jellybiz will confirm availability and pricing in the chat. The website only opens the chat — confirmation happens during direct communication.'}
 ]
 
