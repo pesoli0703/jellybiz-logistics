@@ -5,19 +5,15 @@ export default function Navbar() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="relative w-10 h-10 rounded-md overflow-hidden bg-white border border-blue-50">
+          <div className="relative h-12 w-40 overflow-hidden rounded-md bg-white">
             <Image
-              src="/assets/86aa350d-1a19-4905-894c-ef3cc6773e89.jpeg"
-              alt="Jellybiz Logistics logo"
+              src="/assets/IMG_6305.jpeg"
+              alt="Jellybiz Logistics banner"
               fill
-              sizes="40px"
+              sizes="160px"
               priority
               style={{ objectFit: 'contain' }}
             />
-          </div>
-          <div>
-            <div className="font-bold text-jellynav">Jellybiz Logistics</div>
-            <div className="text-sm text-gray-500">Small money. Fast delivery.</div>
           </div>
         </div>
 
