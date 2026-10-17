@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="relative h-12 w-52 overflow-hidden rounded-md bg-white">
           <Image
             src="/assets/86aa350d-1a19-4905-894c-ef3cc6773e89.jpeg"
-            alt="Jellybiz Logistics banner"
+            alt="Jellybiz Logistics logo"
             fill
             priority
             sizes="208px"
