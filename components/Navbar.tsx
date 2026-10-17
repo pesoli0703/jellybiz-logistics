@@ -1,12 +1,20 @@
-import Link from 'next/link'
 import Image from 'next/image'
 
-export default function Navbar(){
+export default function Navbar() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-jellyblue rounded-md flex items-center justify-center text-white font-bold">JB</div>
+          <div className="relative w-10 h-10 rounded-md overflow-hidden bg-white border border-blue-50">
+            <Image
+              src="/assets/86aa350d-1a19-4905-894c-ef3cc6773e89.jpeg"
+              alt="Jellybiz Logistics logo"
+              fill
+              sizes="40px"
+              priority
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
           <div>
             <div className="font-bold text-jellynav">Jellybiz Logistics</div>
             <div className="text-sm text-gray-500">Small money. Fast delivery.</div>
