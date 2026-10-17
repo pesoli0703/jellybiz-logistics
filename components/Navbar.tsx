@@ -2,19 +2,17 @@ import Image from 'next/image'
 
 export default function Navbar() {
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-blue-100">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="relative h-12 w-40 overflow-hidden rounded-md bg-white">
-            <Image
-              src="/assets/IMG_6305.jpeg"
-              alt="Jellybiz Logistics banner"
-              fill
-              sizes="160px"
-              priority
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
+        <div className="relative h-12 w-52 overflow-hidden rounded-md bg-white">
+          <Image
+            src="/assets/86aa350d-1a19-4905-894c-ef3cc6773e89.jpeg"
+            alt="Jellybiz Logistics banner"
+            fill
+            priority
+            sizes="208px"
+            style={{ objectFit: 'contain' }}
+          />
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
