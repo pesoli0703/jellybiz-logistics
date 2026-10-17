@@ -7,8 +7,8 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-blue-100 bg-white shadow-sm">
             <Image
-              src="/assets/86aa350d-1a19-4905-894c-ef3cc6773e89.jpeg"
-              alt="Jellybiz Logistics logo"
+              src="/assets/IMG_6306.jpeg"
+              alt="Jellybiz emblem"
               fill
               priority
               sizes="56px"
