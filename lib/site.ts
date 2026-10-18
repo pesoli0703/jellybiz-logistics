@@ -11,8 +11,8 @@ export const site = {
   instagram: 'https://www.instagram.com/jellybiz.logistics/',
   instagramHandle: '@jellybiz.logistics',
   flyer: '/assets/flyer-banner.jpg',
-  flyerWidth: 1280,
-  flyerHeight: 511,
+  flyerWidth: 1254,
+  flyerHeight: 1254,
   ogImage: '/assets/og-image.jpg',
   logo: '/assets/logo.png',
   maps: 'https://www.google.com/maps/search/138+Lewis+Street+Lagos+Island+Lagos+Nigeria'

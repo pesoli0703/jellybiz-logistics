@@ -16,7 +16,7 @@ The official flyer is the single source of brand imagery across the site:
 
 All copy, phone/WhatsApp links, address, social links and the production URL live in `lib/site.ts` — update that one file to change contact details everywhere.
 
-If the flyer artwork changes, replace `flyer-banner.jpg` at 1280×511 and regenerate `og-image.jpg` at 1200×630.
+If the flyer artwork changes, replace `flyer-banner.jpg`, update `flyerWidth` and `flyerHeight` in `lib/site.ts` to match the image, and regenerate `og-image.jpg` at 1200×630 without cropping the artwork.
 
 ## Local setup
 
